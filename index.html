@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="./dist/output.css" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/65855b628d.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="w-screen min-h-screen bg-cover lg:h-screen bodyauth font-rubik">
+  <div style="background-image: url('./src/assets/bg-principal.jpg')" class="min-h-screen bg-center bg-cover">
+    <div class="lg:p-24 md:p-10">
+      <div class="flex flex-col items-center justify-center md:p-0 md:flex-row md:justify-between">
+        <div class="w-full lg:w-6/12">
+          <div class="p-10 mb-10 lg:mb-24 md:p-0">
+            <img src="./src/assets/logonova.svg" alt="" />
+          </div>
+
+          <div class="flex items-center justify-between p-10 py-4 text-white md:p-0">
+            <div class="flex flex-col space-y-3">
+              <h2 class="text-4xl font-bold font-rubik md:text-6xl">
+                Lorem ipsum
+              </h2>
+              <p class="w-11/12 text-sm md:text-base">
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nam
+                eligendi nobis dolorem hic, molestias, molestiae officia rerum
+                saepe recusandae quisquam eius, eaque voluptates facilis!
+                Eaque eos ipsa, architecto quia nulla dicta perspiciatis enim
+                est at autem laboriosam inventore commodi vitae praesentium
+                nihil tempora a consequatur. Lorem ipsum dolor sit amet
+                consectetur adipisicing elit. Autem reiciendis rem velit ea?
+                Quaerat esse dolores officia ipsam quae voluptatum! Ad eius
+                sequi totam nesciunt vitae cum quisquam beatae animi quidem,
+                harum nostrum facilis vero provident incidunt a, expedita
+                unde? Minima pariatur a consequatur eaque non quae suscipit
+                nulla recusandae.
+              </p>
+              <div class="flex flex-col flex-wrap justify-between space-y-2 lg:flex-row">
+                <button
+                  class="flex items-center p-3 space-x-2 transition duration-75 ease-in bg-white shadow-md text-primary pr-7 rounded-xl focus:bg-opacity-30">
+                  <i class="mr-2 text-2xl fas fa-search"></i>Obras Realizadas
+                </button>
+                <button class="flex items-center p-3 space-x-2 pr-7">
+                  <i class="mr-2 text-2xl fas fa-scroll"></i>Términos y
+                  condiciones
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="flex flex-col items-center justify-center w-screen lg:w-6/12 md:mt-28">
+          <div
+            class="flex-col items-center justify-center w-10/12 p-10 bg-white my-7 md:w-10/12 md:mt-0 lg:w-10/12 xl:w-8/12 rounded-3xl">
+            <h3 class="text-2xl font-semibold text-center font-primary md:text-3xl text-primary">
+              Login
+            </h3>
+
+            <div class="-mb-3 input-wrapper">
+              <input type="email" class="input font-primary" placeholder="Email" />
+              <i class="mr-2 text-2xl input-icon text-primary fas fa-envelope"></i>
+            </div>
+            <label class="text-center text-error">Email no válido</label>
+            <div class="-mb-3 input-wrapper">
+              <input type="password" class="input font-primary" placeholder="Password" />
+              <i class="text-2xl fas fa-lock input-icon text-primary"></i>
+            </div>
+            <label class="text-center text-error">Password no válido</label>
+            <div class="flex flex-col flex-wrap items-center justify-between md:flex-row lg:justify-between">
+              <div class="flex items-center my-3 control-group">
+                <label class="control control-checkbox font-rubik text-primary">Recuérdame
+                  <input type="checkbox" />
+                  <div class="control_indicator"></div>
+                </label>
+              </div>
+              <button class="text-base text-primary">
+                <a href="./src/pages/auth/reset_password.html">¿Olvidaste tu contraseña?</a>
+              </button>
+            </div>
+            <a id="show-icon" class="relative btn-focus" href="./src/pages/dashboard.html">
+              <p class="absolute hidden-word">Login</p>
+              <div class="show-icon">
+                <i class="absolute text-2xl text-red-500 -top-2 left-0 fas fa-ban"></i>
+              </div>
+            </a>
+            <div class="flex flex-col flex-wrap justify-center lg:justify-between md:flex-row">
+              <label class="text-base text-center">
+                ¿Aún no tienes una cuenta?
+              </label>
+              <button class="text-base text-primary">
+                <a href="./src/pages/auth/register.html"> Regístrate ahora</a>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+</body>
+
+</html>
